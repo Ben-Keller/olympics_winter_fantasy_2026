@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Family Winter Olympics Draft 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bgGlow"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">❄️</div>
+      <div>
+        <div class="title">Family Winter Olympics Draft</div>
+        <div class="subtitle">Milano Cortina 2026 · Live draft board</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div id="statusPill" class="pill">Loading…</div>
+      <button id="refreshBtn" class="btn ghost">Refresh</button>
+      <button id="adminBtn" class="btn ghost">Admin</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <div class="cardHeader">
+        <h2>On the clock</h2>
+        <div id="clock" class="clock">—</div>
+      </div>
+      <div class="miniRow">
+        <div class="mini">
+          <div class="miniLabel">Pick #</div>
+          <div id="pickNum" class="miniValue">—</div>
+        </div>
+        <div class="mini">
+          <div class="miniLabel">Direction</div>
+          <div id="direction" class="miniValue">—</div>
+        </div>
+        <div class="mini">
+          <div class="miniLabel">Draft</div>
+          <div id="draftOpen" class="miniValue">—</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="cardHeader">
+        <h2>Leaderboard</h2>
+        <div class="hint">Projected points</div>
+      </div>
+      <div id="leaderboard" class="tableWrap"></div>
+    </section>
+
+    <section class="card span2">
+      <div class="cardHeader">
+        <h2>Available teams</h2>
+        <div class="controls">
+          <div class="toggle">
+            <input type="checkbox" id="showChosenToggle" />
+            <label for="showChosenToggle">Show chosen teams</label>
+          </div>
+          <select id="sportFilter" class="input">
+            <option value="">All sports</option>
+          </select>
+          <input id="searchBox" class="input" placeholder="Search country or sport…" />
+          <button id="clearFilters" class="btn ghost">Clear</button>
+        </div>
+      </div>
+
+      <div class="hintRow">
+        <div class="chip" id="chipAvail">Available</div>
+        <div class="chip subtle" id="chipTaken">Taken</div>
+        <div class="spacer"></div>
+        <div class="hint">Sort by: power rank · projected points · medals · last year</div>
+      </div>
+
+      <div id="pairsTable" class="tableWrap"></div>
+    </section>
+
+    <section class="card">
+      <div class="cardHeader">
+        <h2>Make a pick</h2>
+        <div class="hint">Click a row in the table to prefill</div>
+      </div>
+
+      <div class="form">
+        <label>Player</label>
+        <select id="playerSelect" class="input"></select>
+
+        <label>PIN</label>
+        <input id="pinInput" class="input" type="password" placeholder="4 digits" />
+
+        <label>Sport</label>
+        <input id="sportInput" class="input" placeholder="Click a row to fill" />
+
+        <label>Country</label>
+        <input id="countryInput" class="input" placeholder="Click a row to fill" />
+
+        <button id="submitPick" class="btn primary">Submit pick</button>
+        <div id="pickMsg" class="msg"></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="cardHeader">
+        <h2>Teams</h2>
+        <div class="hint">Everyone’s roster</div>
+      </div>
+      <div id="teams" class="teams"></div>
+    </section>
+  </main>
+
+  <div id="modalBackdrop" class="modalBackdrop hidden"></div>
+  <div id="adminModal" class="modal hidden">
+    <div class="modalHeader">
+      <h3>Admin</h3>
+      <button id="closeAdmin" class="btn ghost small">Close</button>
+    </div>
+
+    <div class="modalBody">
+      <label>Commissioner PIN</label>
+      <input id="adminPin" class="input" type="password" placeholder="Commissioner PIN" />
+
+      <div class="modalRow">
+        <button id="undoBtn" class="btn ghost">Undo last pick</button>
+        <button id="resetBtn" class="btn danger">Reset draft</button>
+      </div>
+
+      <div class="modalRow">
+        <button id="openBtn" class="btn ghost">Open draft</button>
+        <button id="closeBtn" class="btn ghost">Close draft</button>
+      </div>
+
+      <div id="adminMsg" class="msg"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

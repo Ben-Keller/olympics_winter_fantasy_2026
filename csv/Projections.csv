@@ -1,0 +1,37 @@
+pair_id,sport,country,power_rank,projected_points,num_medals,last_year_score
+ALP__Canada,Alpine Skiing,Canada,1,15.5,0,14.8
+ALP__United_States,Alpine Skiing,United States,2,8.4,2,14.7
+ALP__Norway,Alpine Skiing,Norway,3,16.2,8,1.7
+ALP__Germany,Alpine Skiing,Germany,4,11.6,0,1.9
+ALP__Switzerland,Alpine Skiing,Switzerland,5,8.2,0,11.2
+ALP__Japan,Alpine Skiing,Japan,6,16.9,8,8.4
+BIA__Canada,Biathlon,Canada,7,12.1,4,16.2
+BIA__United_States,Biathlon,United States,8,4.1,2,14.0
+BIA__Norway,Biathlon,Norway,9,10.1,2,4.3
+BIA__Germany,Biathlon,Germany,10,17.7,1,1.9
+BIA__Switzerland,Biathlon,Switzerland,11,5.7,5,12.1
+BIA__Japan,Biathlon,Japan,12,18.5,7,10.7
+CUR__Canada,Curling,Canada,13,21.5,6,1.6
+CUR__United_States,Curling,United States,14,9.3,5,11.5
+CUR__Norway,Curling,Norway,15,16.7,0,13.2
+CUR__Germany,Curling,Germany,16,17.9,1,17.1
+CUR__Switzerland,Curling,Switzerland,17,19.6,6,5.6
+CUR__Japan,Curling,Japan,18,15.4,5,3.3
+FIG__Canada,Figure Skating,Canada,19,10.4,4,14.0
+FIG__United_States,Figure Skating,United States,20,16.3,1,12.2
+FIG__Norway,Figure Skating,Norway,21,7.1,3,3.3
+FIG__Germany,Figure Skating,Germany,22,10.8,8,4.4
+FIG__Switzerland,Figure Skating,Switzerland,23,9.8,0,4.6
+FIG__Japan,Figure Skating,Japan,24,4.6,5,8.0
+ICE__Canada,Ice Hockey,Canada,25,5.2,5,4.3
+ICE__United_States,Ice Hockey,United States,26,13.0,7,2.9
+ICE__Norway,Ice Hockey,Norway,27,6.5,8,10.8
+ICE__Germany,Ice Hockey,Germany,28,17.4,6,18.0
+ICE__Switzerland,Ice Hockey,Switzerland,29,11.2,3,19.9
+ICE__Japan,Ice Hockey,Japan,30,6.5,7,1.8
+SKE__Canada,Skeleton,Canada,31,4.8,1,3.1
+SKE__United_States,Skeleton,United States,32,6.9,6,11.9
+SKE__Norway,Skeleton,Norway,33,10.9,7,10.6
+SKE__Germany,Skeleton,Germany,34,21.5,0,13.6
+SKE__Switzerland,Skeleton,Switzerland,35,6.1,8,15.0
+SKE__Japan,Skeleton,Japan,36,17.8,5,2.2

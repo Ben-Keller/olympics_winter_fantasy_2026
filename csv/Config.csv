@@ -1,0 +1,7 @@
+key,value
+draft_status,OPEN
+pick_number,1
+direction,1
+turn_index,1
+allow_out_of_turn,FALSE
+commissioner_pin,1234
