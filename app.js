@@ -31,14 +31,22 @@ async function apiGetState() {
   const r = await fetch(`${API_URL}?route=state`, { cache: "no-store" });
   return r.json();
 }
+
 async function apiPost(route, payload) {
+  const form = new URLSearchParams();
+  for (const [k, v] of Object.entries(payload || {})) {
+    form.append(k, v == null ? "" : String(v));
+  }
+
   const r = await fetch(`${API_URL}?route=${encodeURIComponent(route)}`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload || {})
+    // IMPORTANT: no JSON content-type, no custom headers
+    body: form
   });
+
   return r.json();
 }
+
 
 function computeTakenSet() {
   return new Set((STATE && STATE.taken_pair_ids) ? STATE.taken_pair_ids : []);
